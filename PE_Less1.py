@@ -39,7 +39,7 @@ if __name__ == '__main__':
     attempts = 20
     fib_numb = 25
     print(f'Попыток для числа {fib_numb}:', attempts)
-    print('-' * 25)
+    print('-' * 30)
     for i in range(3):
         print(f'Время на вариант {i+1}: ', round(timeit(f'fib_var{i+1}({fib_numb})',
                                                         number=attempts, globals=globals()), 6) * 100)
